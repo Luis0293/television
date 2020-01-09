@@ -457,7 +457,6 @@
             // 
             // button16
             // 
-            this.button16.BackgroundImage = global::television.Properties.Resources._11;
             this.button16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button16.FlatAppearance.BorderSize = 0;
             this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -560,7 +559,6 @@
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Black;
-            this.pictureBox3.BackgroundImage = global::television.Properties.Resources.ruido;
             this.pictureBox3.Location = new System.Drawing.Point(320, 176);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(541, 283);
@@ -579,7 +577,6 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = global::television.Properties.Resources.television1;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(308, 161);
             this.pictureBox1.Name = "pictureBox1";
