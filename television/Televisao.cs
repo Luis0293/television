@@ -10,11 +10,12 @@ namespace television
     {
         public bool enviar = true;
         public bool enviar2 = false;
+
         private bool recebe
         {
             set
             {
-
+                
             }
         }
 

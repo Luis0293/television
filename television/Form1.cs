@@ -189,5 +189,14 @@ namespace television
         {
 
         }
+
+        // Música
+        private void Button16_Click(object sender, EventArgs e)
+        {
+            //My.Computer.Audio.Play(My.Resources.Rodeo_2);
+            System.Media.SoundPlayer player = new System.Media.SoundPlayer();
+            player.SoundLocation = "/Resources/Rodeo 2.wav";
+            player.Play();
+        }
     }
 }
