@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WMPLib;
 
 namespace television
 {
     public partial class Form1 : Form
     {
+        WMPLib.WindowsMediaPlayer player = new WMPLib.WindowsMediaPlayer();
         Televisao TV = new Televisao();
 
         public Form1()
@@ -31,6 +33,7 @@ namespace television
             pictureBox10.Visible = TV.enviar2;
             pictureBox11.Visible = TV.enviar2;
             pictureBox12.Visible = TV.enviar2;
+            player.controls.stop();
             pictureBox3.Visible = TV.enviar;
         }
 
@@ -47,6 +50,7 @@ namespace television
             pictureBox11.Visible = TV.enviar2;
             pictureBox12.Visible = TV.enviar2;
             pictureBox3.Visible = TV.enviar2;
+            player.controls.stop();
         }
 
         private void Button3_Click(object sender, EventArgs e)
@@ -65,6 +69,7 @@ namespace television
             pictureBox10.Visible = TV.enviar2;
             pictureBox11.Visible = TV.enviar2;
             pictureBox12.Visible = TV.enviar2;
+            player.controls.stop();
             pictureBox4.Visible = TV.enviar;
         }
 
@@ -79,6 +84,7 @@ namespace television
             pictureBox10.Visible = TV.enviar2;
             pictureBox11.Visible = TV.enviar2;
             pictureBox12.Visible = TV.enviar2;
+            player.controls.stop();
             pictureBox5.Visible = TV.enviar;
         }
 
@@ -93,6 +99,7 @@ namespace television
             pictureBox10.Visible = TV.enviar2;
             pictureBox11.Visible = TV.enviar2;
             pictureBox12.Visible = TV.enviar2;
+            player.controls.stop();
             pictureBox6.Visible = TV.enviar;
         }
 
@@ -107,6 +114,7 @@ namespace television
             pictureBox10.Visible = TV.enviar2;
             pictureBox11.Visible = TV.enviar2;
             pictureBox12.Visible = TV.enviar2;
+            player.controls.stop();
             pictureBox7.Visible = TV.enviar;
         }
 
@@ -121,6 +129,7 @@ namespace television
             pictureBox10.Visible = TV.enviar2;
             pictureBox11.Visible = TV.enviar2;
             pictureBox12.Visible = TV.enviar2;
+            player.controls.stop();
             pictureBox8.Visible = TV.enviar;
         }
 
@@ -135,6 +144,7 @@ namespace television
             pictureBox10.Visible = TV.enviar2;
             pictureBox11.Visible = TV.enviar2;
             pictureBox12.Visible = TV.enviar2;
+            player.controls.stop();
             pictureBox9.Visible = TV.enviar;
         }
 
@@ -149,6 +159,7 @@ namespace television
             pictureBox9.Visible = TV.enviar2;
             pictureBox11.Visible = TV.enviar2;
             pictureBox12.Visible = TV.enviar2;
+            player.controls.stop();
             pictureBox10.Visible = TV.enviar;
         }
 
@@ -163,6 +174,7 @@ namespace television
             pictureBox9.Visible = TV.enviar2;
             pictureBox10.Visible = TV.enviar2;
             pictureBox12.Visible = TV.enviar2;
+            player.controls.stop();
             pictureBox11.Visible = TV.enviar;
         }
 
@@ -177,6 +189,7 @@ namespace television
             pictureBox9.Visible = TV.enviar2;
             pictureBox10.Visible = TV.enviar2;
             pictureBox11.Visible = TV.enviar2;
+            player.controls.stop();
             pictureBox12.Visible = TV.enviar;
         }
 
@@ -190,13 +203,46 @@ namespace television
 
         }
 
-        // Música
+        private void Button15_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        // MÚSICA
         private void Button16_Click(object sender, EventArgs e)
         {
-            //My.Computer.Audio.Play(My.Resources.Rodeo_2);
-            System.Media.SoundPlayer player = new System.Media.SoundPlayer();
-            player.SoundLocation = "/Resources/Rodeo 2.wav";
-            player.Play();
+            player.URL = "Mocca.mp3";
+        }
+
+        private void Button17_Click(object sender, EventArgs e)
+        {
+            player.URL = "Rodeo.mp3";
+        }
+
+        private void Button18_Click(object sender, EventArgs e)
+        {
+            player.URL = "Baby Momma.mp3";
+        }
+
+        private void Button19_Click(object sender, EventArgs e)
+        {
+            player.URL = "More Sex More Bless.mp3";
+        }
+        // MÚSICA
+
+        private void Button28_Click(object sender, EventArgs e)
+        {
+            player.controls.pause();
+        }
+
+        private void Button29_Click(object sender, EventArgs e)
+        {
+            player.controls.play();
+        }
+
+        private void Button30_Click(object sender, EventArgs e)
+        {
+            player.controls.stop();
         }
     }
 }
