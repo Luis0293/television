@@ -121,6 +121,24 @@ namespace television.Properties {
         }
         
         /// <summary>
+        ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Festa {
+            get {
+                return ResourceManager.GetStream("Festa", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream More_Sex_More_Bless {
+            get {
+                return ResourceManager.GetStream("More Sex More Bless", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap pause {
@@ -157,6 +175,15 @@ namespace television.Properties {
             get {
                 object obj = ResourceManager.GetObject("play2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Rodeo2 {
+            get {
+                return ResourceManager.GetStream("Rodeo2", resourceCulture);
             }
         }
         

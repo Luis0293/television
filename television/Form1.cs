@@ -7,13 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 using WMPLib;
 
 namespace television
 {
     public partial class Form1 : Form
     {
-        WMPLib.WindowsMediaPlayer player = new WMPLib.WindowsMediaPlayer();
+        
         Televisao TV = new Televisao();
 
         public Form1()
@@ -33,7 +34,7 @@ namespace television
             pictureBox10.Visible = TV.enviar2;
             pictureBox11.Visible = TV.enviar2;
             pictureBox12.Visible = TV.enviar2;
-            player.controls.stop();
+            
             pictureBox3.Visible = TV.enviar;
         }
 
@@ -50,7 +51,7 @@ namespace television
             pictureBox11.Visible = TV.enviar2;
             pictureBox12.Visible = TV.enviar2;
             pictureBox3.Visible = TV.enviar2;
-            player.controls.stop();
+            
         }
 
         private void Button3_Click(object sender, EventArgs e)
@@ -69,7 +70,7 @@ namespace television
             pictureBox10.Visible = TV.enviar2;
             pictureBox11.Visible = TV.enviar2;
             pictureBox12.Visible = TV.enviar2;
-            player.controls.stop();
+            
             pictureBox4.Visible = TV.enviar;
         }
 
@@ -84,7 +85,7 @@ namespace television
             pictureBox10.Visible = TV.enviar2;
             pictureBox11.Visible = TV.enviar2;
             pictureBox12.Visible = TV.enviar2;
-            player.controls.stop();
+            
             pictureBox5.Visible = TV.enviar;
         }
 
@@ -99,7 +100,7 @@ namespace television
             pictureBox10.Visible = TV.enviar2;
             pictureBox11.Visible = TV.enviar2;
             pictureBox12.Visible = TV.enviar2;
-            player.controls.stop();
+            
             pictureBox6.Visible = TV.enviar;
         }
 
@@ -114,7 +115,7 @@ namespace television
             pictureBox10.Visible = TV.enviar2;
             pictureBox11.Visible = TV.enviar2;
             pictureBox12.Visible = TV.enviar2;
-            player.controls.stop();
+            
             pictureBox7.Visible = TV.enviar;
         }
 
@@ -129,7 +130,7 @@ namespace television
             pictureBox10.Visible = TV.enviar2;
             pictureBox11.Visible = TV.enviar2;
             pictureBox12.Visible = TV.enviar2;
-            player.controls.stop();
+            
             pictureBox8.Visible = TV.enviar;
         }
 
@@ -144,7 +145,7 @@ namespace television
             pictureBox10.Visible = TV.enviar2;
             pictureBox11.Visible = TV.enviar2;
             pictureBox12.Visible = TV.enviar2;
-            player.controls.stop();
+            
             pictureBox9.Visible = TV.enviar;
         }
 
@@ -159,7 +160,7 @@ namespace television
             pictureBox9.Visible = TV.enviar2;
             pictureBox11.Visible = TV.enviar2;
             pictureBox12.Visible = TV.enviar2;
-            player.controls.stop();
+            
             pictureBox10.Visible = TV.enviar;
         }
 
@@ -174,7 +175,7 @@ namespace television
             pictureBox9.Visible = TV.enviar2;
             pictureBox10.Visible = TV.enviar2;
             pictureBox12.Visible = TV.enviar2;
-            player.controls.stop();
+            
             pictureBox11.Visible = TV.enviar;
         }
 
@@ -189,7 +190,7 @@ namespace television
             pictureBox9.Visible = TV.enviar2;
             pictureBox10.Visible = TV.enviar2;
             pictureBox11.Visible = TV.enviar2;
-            player.controls.stop();
+            
             pictureBox12.Visible = TV.enviar;
         }
 
@@ -211,38 +212,86 @@ namespace television
         // MÚSICA
         private void Button16_Click(object sender, EventArgs e)
         {
-            player.URL = "Mocca.mp3";
+            try
+            {
+                SoundPlayer player = new SoundPlayer(television.Properties.Resources.Festa);
+                player.Play();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro" + ex.Message);
+            }
         }
 
         private void Button17_Click(object sender, EventArgs e)
         {
-            player.URL = "Rodeo.mp3";
+            try
+            {
+                SoundPlayer player = new SoundPlayer(television.Properties.Resources.Rodeo2);
+                player.Play();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro" + ex.Message);
+            }
         }
 
         private void Button18_Click(object sender, EventArgs e)
         {
-            player.URL = "Baby Momma.mp3";
+            try
+            {
+                SoundPlayer player = new SoundPlayer(television.Properties.Resources.More_Sex_More_Bless);
+                player.Play();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro" + ex.Message);
+            }
         }
 
         private void Button19_Click(object sender, EventArgs e)
         {
-            player.URL = "More Sex More Bless.mp3";
+            
         }
         // MÚSICA
 
         private void Button28_Click(object sender, EventArgs e)
         {
-            player.controls.pause();
+            try
+            {
+                SoundPlayer player = new SoundPlayer(television.Properties.Resources.Festa);
+                player.Stop();
+                SoundPlayer player1 = new SoundPlayer(television.Properties.Resources.Rodeo2);
+                player1.Stop();
+                SoundPlayer player2 = new SoundPlayer(television.Properties.Resources.More_Sex_More_Bless);
+                player2.Stop();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro" + ex.Message);
+            }
         }
 
         private void Button29_Click(object sender, EventArgs e)
         {
-            player.controls.play();
+            try
+            {
+                SoundPlayer player = new SoundPlayer(television.Properties.Resources.Festa);
+                player.Play();
+                SoundPlayer player1 = new SoundPlayer(television.Properties.Resources.Rodeo2);
+                player1.Play();
+                SoundPlayer player2 = new SoundPlayer(television.Properties.Resources.More_Sex_More_Bless);
+                player2.Play();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro" + ex.Message);
+            }
         }
 
         private void Button30_Click(object sender, EventArgs e)
         {
-            player.controls.stop();
+            
         }
     }
 }

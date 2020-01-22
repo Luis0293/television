@@ -44,13 +44,13 @@
             this.button14 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.button30 = new System.Windows.Forms.Button();
-            this.button29 = new System.Windows.Forms.Button();
-            this.button28 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
             this.button18 = new System.Windows.Forms.Button();
             this.button17 = new System.Windows.Forms.Button();
             this.button19 = new System.Windows.Forms.Button();
+            this.button30 = new System.Windows.Forms.Button();
+            this.button29 = new System.Windows.Forms.Button();
+            this.button28 = new System.Windows.Forms.Button();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
@@ -235,14 +235,73 @@
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
             this.flowLayoutPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.flowLayoutPanel1.Controls.Add(this.button16);
-            this.flowLayoutPanel1.Controls.Add(this.button18);
             this.flowLayoutPanel1.Controls.Add(this.button17);
+            this.flowLayoutPanel1.Controls.Add(this.button18);
             this.flowLayoutPanel1.Controls.Add(this.button19);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(320, 176);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(541, 283);
             this.flowLayoutPanel1.TabIndex = 27;
             this.flowLayoutPanel1.Visible = false;
+            // 
+            // button16
+            // 
+            this.button16.BackgroundImage = global::television.Properties.Resources._11;
+            this.button16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button16.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button16.FlatAppearance.BorderSize = 0;
+            this.button16.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button16.Location = new System.Drawing.Point(3, 3);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(84, 88);
+            this.button16.TabIndex = 0;
+            this.button16.UseVisualStyleBackColor = true;
+            this.button16.Click += new System.EventHandler(this.Button16_Click);
+            // 
+            // button18
+            // 
+            this.button18.BackgroundImage = global::television.Properties.Resources._4;
+            this.button18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button18.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button18.FlatAppearance.BorderSize = 0;
+            this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button18.Location = new System.Drawing.Point(183, 3);
+            this.button18.Name = "button18";
+            this.button18.Size = new System.Drawing.Size(84, 88);
+            this.button18.TabIndex = 29;
+            this.button18.UseVisualStyleBackColor = true;
+            this.button18.Click += new System.EventHandler(this.Button18_Click);
+            // 
+            // button17
+            // 
+            this.button17.BackColor = System.Drawing.Color.DimGray;
+            this.button17.BackgroundImage = global::television.Properties.Resources._3;
+            this.button17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button17.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button17.FlatAppearance.BorderSize = 0;
+            this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button17.Location = new System.Drawing.Point(93, 3);
+            this.button17.Name = "button17";
+            this.button17.Size = new System.Drawing.Size(84, 88);
+            this.button17.TabIndex = 28;
+            this.button17.UseVisualStyleBackColor = false;
+            this.button17.Click += new System.EventHandler(this.Button17_Click);
+            // 
+            // button19
+            // 
+            this.button19.BackColor = System.Drawing.Color.DimGray;
+            this.button19.BackgroundImage = global::television.Properties.Resources._41;
+            this.button19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button19.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button19.FlatAppearance.BorderSize = 0;
+            this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button19.Location = new System.Drawing.Point(273, 3);
+            this.button19.Name = "button19";
+            this.button19.Size = new System.Drawing.Size(84, 88);
+            this.button19.TabIndex = 30;
+            this.button19.UseVisualStyleBackColor = false;
+            this.button19.Click += new System.EventHandler(this.Button19_Click);
             // 
             // button30
             // 
@@ -280,65 +339,6 @@
             this.button28.Tag = "ON";
             this.button28.UseVisualStyleBackColor = true;
             this.button28.Click += new System.EventHandler(this.Button28_Click);
-            // 
-            // button16
-            // 
-            this.button16.BackgroundImage = global::television.Properties.Resources._11;
-            this.button16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button16.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button16.FlatAppearance.BorderSize = 0;
-            this.button16.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button16.Location = new System.Drawing.Point(3, 3);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(84, 88);
-            this.button16.TabIndex = 0;
-            this.button16.UseVisualStyleBackColor = true;
-            this.button16.Click += new System.EventHandler(this.Button16_Click);
-            // 
-            // button18
-            // 
-            this.button18.BackgroundImage = global::television.Properties.Resources._4;
-            this.button18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button18.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button18.FlatAppearance.BorderSize = 0;
-            this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button18.Location = new System.Drawing.Point(93, 3);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(84, 88);
-            this.button18.TabIndex = 29;
-            this.button18.UseVisualStyleBackColor = true;
-            this.button18.Click += new System.EventHandler(this.Button18_Click);
-            // 
-            // button17
-            // 
-            this.button17.BackColor = System.Drawing.Color.DimGray;
-            this.button17.BackgroundImage = global::television.Properties.Resources._3;
-            this.button17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button17.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button17.FlatAppearance.BorderSize = 0;
-            this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button17.Location = new System.Drawing.Point(183, 3);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(84, 88);
-            this.button17.TabIndex = 28;
-            this.button17.UseVisualStyleBackColor = false;
-            this.button17.Click += new System.EventHandler(this.Button17_Click);
-            // 
-            // button19
-            // 
-            this.button19.BackColor = System.Drawing.Color.DimGray;
-            this.button19.BackgroundImage = global::television.Properties.Resources._41;
-            this.button19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button19.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button19.FlatAppearance.BorderSize = 0;
-            this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button19.Location = new System.Drawing.Point(273, 3);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(84, 88);
-            this.button19.TabIndex = 30;
-            this.button19.UseVisualStyleBackColor = false;
-            this.button19.Click += new System.EventHandler(this.Button19_Click);
             // 
             // pictureBox12
             // 

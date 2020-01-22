@@ -95,6 +95,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\1.jpg" />
+    <None Include="Resources\Rodeo2.wav" />
     <None Include="Resources\3.png" />
     <None Include="Resources\4.jpg" />
     <None Include="Resources\pause.png" />
@@ -102,6 +103,8 @@
     <None Include="Resources\play2.png" />
     <None Include="Resources\pause1.png" />
     <None Include="Resources\4.png" />
+    <None Include="Resources\Festa.wav" />
+    <None Include="Resources\More Sex More Bless %28online-audio-converter.com%29.wav" />
     <Content Include="Resources\Rodeo.wav" />
     <None Include="Resources\2.png" />
   </ItemGroup>
