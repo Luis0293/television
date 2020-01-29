@@ -16,15 +16,31 @@ namespace television
     {
         
         Televisao TV = new Televisao();
+        bool on = true;
 
         public Form1()
         {
             InitializeComponent();
+            button1.Text = "OFF";
         }
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            flowLayoutPanel1.Visible = TV.enviar2;
+            Desliga d = new Desliga();
+            if (on)
+            {
+                button1.Text = d.liga;
+                pictureBox3.Visible = TV.enviar;
+                on = d.desligar;
+            }
+            else
+            {
+                button1.Text = d.desliga;
+                pictureBox3.Visible = TV.enviar2;
+                on = d.ligar;
+            }
+
+            /*flowLayoutPanel1.Visible = TV.enviar2;
             pictureBox4.Visible = TV.enviar2;
             pictureBox5.Visible = TV.enviar2;
             pictureBox6.Visible = TV.enviar2;
@@ -35,7 +51,7 @@ namespace television
             pictureBox11.Visible = TV.enviar2;
             pictureBox12.Visible = TV.enviar2;
             
-            pictureBox3.Visible = TV.enviar;
+            pictureBox3.Visible = TV.enviar;*/
         }
 
         private void Button2_Click(object sender, EventArgs e)
