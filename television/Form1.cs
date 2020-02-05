@@ -22,41 +22,52 @@ namespace television
         {
             InitializeComponent();
             button1.Text = "OFF";
+            timer1.Start();
         }
 
         private void Button1_Click(object sender, EventArgs e)
         {
             Desliga d = new Desliga();
+            Televisao TV = new Televisao();
+
             if (on)
             {
                 button1.Text = d.liga;
                 pictureBox3.Visible = TV.enviar;
+                label1.Visible = TV.enviar2;
                 on = d.desligar;
+
             }
             else
             {
                 button1.Text = d.desliga;
                 pictureBox3.Visible = TV.enviar2;
                 on = d.ligar;
+                flowLayoutPanel1.Visible = TV.enviar2;
+                pictureBox4.Visible = TV.enviar2;
+                pictureBox5.Visible = TV.enviar2;
+                pictureBox6.Visible = TV.enviar2;
+                pictureBox7.Visible = TV.enviar2;
+                pictureBox8.Visible = TV.enviar2;
+                pictureBox9.Visible = TV.enviar2;
+                pictureBox10.Visible = TV.enviar2;
+                pictureBox11.Visible = TV.enviar2;
+                pictureBox12.Visible = TV.enviar2;
+                pictureBox3.Visible = TV.enviar2;
+                label1.Visible = TV.enviar;
+                
             }
-
-            /*flowLayoutPanel1.Visible = TV.enviar2;
-            pictureBox4.Visible = TV.enviar2;
-            pictureBox5.Visible = TV.enviar2;
-            pictureBox6.Visible = TV.enviar2;
-            pictureBox7.Visible = TV.enviar2;
-            pictureBox8.Visible = TV.enviar2;
-            pictureBox9.Visible = TV.enviar2;
-            pictureBox10.Visible = TV.enviar2;
-            pictureBox11.Visible = TV.enviar2;
-            pictureBox12.Visible = TV.enviar2;
-            
-            pictureBox3.Visible = TV.enviar;*/
         }
 
         private void Button2_Click(object sender, EventArgs e)
         {
-            flowLayoutPanel1.Visible = TV.enviar2;
+            
+
+        }
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            flowLayoutPanel1.Visible = TV.enviar;
             pictureBox4.Visible = TV.enviar2;
             pictureBox5.Visible = TV.enviar2;
             pictureBox6.Visible = TV.enviar2;
@@ -67,12 +78,7 @@ namespace television
             pictureBox11.Visible = TV.enviar2;
             pictureBox12.Visible = TV.enviar2;
             pictureBox3.Visible = TV.enviar2;
-            
-        }
-
-        private void Button3_Click(object sender, EventArgs e)
-        {
-            flowLayoutPanel1.Visible = TV.enviar;
+            label1.Visible = TV.enviar2;
         }
 
         private void Button4_Click(object sender, EventArgs e)
@@ -86,7 +92,7 @@ namespace television
             pictureBox10.Visible = TV.enviar2;
             pictureBox11.Visible = TV.enviar2;
             pictureBox12.Visible = TV.enviar2;
-            
+            label1.Visible = TV.enviar2;
             pictureBox4.Visible = TV.enviar;
         }
 
@@ -101,7 +107,7 @@ namespace television
             pictureBox10.Visible = TV.enviar2;
             pictureBox11.Visible = TV.enviar2;
             pictureBox12.Visible = TV.enviar2;
-            
+            label1.Visible = TV.enviar2;
             pictureBox5.Visible = TV.enviar;
         }
 
@@ -116,7 +122,7 @@ namespace television
             pictureBox10.Visible = TV.enviar2;
             pictureBox11.Visible = TV.enviar2;
             pictureBox12.Visible = TV.enviar2;
-            
+            label1.Visible = TV.enviar2;
             pictureBox6.Visible = TV.enviar;
         }
 
@@ -131,7 +137,7 @@ namespace television
             pictureBox10.Visible = TV.enviar2;
             pictureBox11.Visible = TV.enviar2;
             pictureBox12.Visible = TV.enviar2;
-            
+            label1.Visible = TV.enviar2;
             pictureBox7.Visible = TV.enviar;
         }
 
@@ -146,7 +152,7 @@ namespace television
             pictureBox10.Visible = TV.enviar2;
             pictureBox11.Visible = TV.enviar2;
             pictureBox12.Visible = TV.enviar2;
-            
+            label1.Visible = TV.enviar2;
             pictureBox8.Visible = TV.enviar;
         }
 
@@ -161,7 +167,7 @@ namespace television
             pictureBox10.Visible = TV.enviar2;
             pictureBox11.Visible = TV.enviar2;
             pictureBox12.Visible = TV.enviar2;
-            
+            label1.Visible = TV.enviar2;
             pictureBox9.Visible = TV.enviar;
         }
 
@@ -176,7 +182,7 @@ namespace television
             pictureBox9.Visible = TV.enviar2;
             pictureBox11.Visible = TV.enviar2;
             pictureBox12.Visible = TV.enviar2;
-            
+            label1.Visible = TV.enviar2;
             pictureBox10.Visible = TV.enviar;
         }
 
@@ -191,7 +197,7 @@ namespace television
             pictureBox9.Visible = TV.enviar2;
             pictureBox10.Visible = TV.enviar2;
             pictureBox12.Visible = TV.enviar2;
-            
+            label1.Visible = TV.enviar2;
             pictureBox11.Visible = TV.enviar;
         }
 
@@ -206,7 +212,7 @@ namespace television
             pictureBox9.Visible = TV.enviar2;
             pictureBox10.Visible = TV.enviar2;
             pictureBox11.Visible = TV.enviar2;
-            
+            label1.Visible = TV.enviar2;
             pictureBox12.Visible = TV.enviar;
         }
 
@@ -308,6 +314,11 @@ namespace television
         private void Button30_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            label1.Text = DateTime.Now.ToString("HH:mm");
         }
     }
 }

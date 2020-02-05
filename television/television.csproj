@@ -96,6 +96,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\1.jpg" />
+    <None Include="Resources\televisionPNG.png" />
     <None Include="Resources\Rodeo2.wav" />
     <None Include="Resources\3.png" />
     <None Include="Resources\4.jpg" />
