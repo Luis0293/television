@@ -44,15 +44,15 @@
             this.button14 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.button16 = new System.Windows.Forms.Button();
+            this.button17 = new System.Windows.Forms.Button();
+            this.button18 = new System.Windows.Forms.Button();
+            this.button19 = new System.Windows.Forms.Button();
             this.button30 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.button29 = new System.Windows.Forms.Button();
             this.button28 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
-            this.button18 = new System.Windows.Forms.Button();
-            this.button19 = new System.Windows.Forms.Button();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
@@ -236,59 +236,6 @@
             this.flowLayoutPanel1.TabIndex = 27;
             this.flowLayoutPanel1.Visible = false;
             // 
-            // button30
-            // 
-            this.button30.Location = new System.Drawing.Point(134, 415);
-            this.button30.Name = "button30";
-            this.button30.Size = new System.Drawing.Size(40, 40);
-            this.button30.TabIndex = 30;
-            this.button30.Tag = "ON";
-            this.button30.Text = "Q.V";
-            this.button30.UseVisualStyleBackColor = true;
-            this.button30.Click += new System.EventHandler(this.Button30_Click);
-            // 
-            // timer1
-            // 
-            this.timer1.Interval = 1000;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // label1
-            // 
-            this.label1.BackColor = System.Drawing.Color.Black;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(486, 287);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(215, 51);
-            this.label1.TabIndex = 31;
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // button29
-            // 
-            this.button29.BackgroundImage = global::television.Properties.Resources.play2;
-            this.button29.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button29.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button29.Location = new System.Drawing.Point(88, 415);
-            this.button29.Name = "button29";
-            this.button29.Size = new System.Drawing.Size(40, 40);
-            this.button29.TabIndex = 29;
-            this.button29.Tag = "ON";
-            this.button29.UseVisualStyleBackColor = true;
-            this.button29.Click += new System.EventHandler(this.Button29_Click);
-            // 
-            // button28
-            // 
-            this.button28.BackgroundImage = global::television.Properties.Resources.pause1;
-            this.button28.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button28.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button28.Location = new System.Drawing.Point(42, 415);
-            this.button28.Name = "button28";
-            this.button28.Size = new System.Drawing.Size(40, 40);
-            this.button28.TabIndex = 28;
-            this.button28.Tag = "ON";
-            this.button28.UseVisualStyleBackColor = true;
-            this.button28.Click += new System.EventHandler(this.Button28_Click);
-            // 
             // button16
             // 
             this.button16.BackgroundImage = global::television.Properties.Resources._11;
@@ -347,6 +294,60 @@
             this.button19.TabIndex = 30;
             this.button19.UseVisualStyleBackColor = false;
             this.button19.Click += new System.EventHandler(this.Button19_Click);
+            // 
+            // button30
+            // 
+            this.button30.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button30.Location = new System.Drawing.Point(134, 415);
+            this.button30.Name = "button30";
+            this.button30.Size = new System.Drawing.Size(40, 40);
+            this.button30.TabIndex = 30;
+            this.button30.Tag = "ON";
+            this.button30.Text = "O";
+            this.button30.UseVisualStyleBackColor = true;
+            this.button30.Click += new System.EventHandler(this.Button30_Click);
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.Black;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(486, 287);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(215, 51);
+            this.label1.TabIndex = 31;
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // button29
+            // 
+            this.button29.BackgroundImage = global::television.Properties.Resources.play2;
+            this.button29.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button29.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button29.Location = new System.Drawing.Point(88, 415);
+            this.button29.Name = "button29";
+            this.button29.Size = new System.Drawing.Size(40, 40);
+            this.button29.TabIndex = 29;
+            this.button29.Tag = "ON";
+            this.button29.UseVisualStyleBackColor = true;
+            this.button29.Click += new System.EventHandler(this.Button29_Click);
+            // 
+            // button28
+            // 
+            this.button28.BackgroundImage = global::television.Properties.Resources.pause1;
+            this.button28.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button28.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button28.Location = new System.Drawing.Point(42, 415);
+            this.button28.Name = "button28";
+            this.button28.Size = new System.Drawing.Size(40, 40);
+            this.button28.TabIndex = 28;
+            this.button28.Tag = "ON";
+            this.button28.UseVisualStyleBackColor = true;
+            this.button28.Click += new System.EventHandler(this.Button28_Click);
             // 
             // pictureBox12
             // 
@@ -505,6 +506,7 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Form1";
             this.flowLayoutPanel1.ResumeLayout(false);
