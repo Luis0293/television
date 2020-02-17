@@ -110,6 +110,7 @@
     <None Include="Resources\4.png" />
     <None Include="Resources\Festa.wav" />
     <None Include="Resources\More Sex More Bless %28online-audio-converter.com%29.wav" />
+    <None Include="Resources\icon.ico" />
     <Content Include="Resources\Rodeo.wav" />
     <None Include="Resources\2.png" />
   </ItemGroup>
