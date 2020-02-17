@@ -311,14 +311,16 @@ namespace television
             }
         }
 
-        private void Button30_Click(object sender, EventArgs e)
-        {
-            
-        }
+
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            label1.Text = DateTime.Now.ToString("HH:mm");
+            label1.Text = DateTime.Now.ToString("HH:mm:ss");
+        }
+
+        private void Help_Click_1(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Help.ShowHelp(this, Application.StartupPath + "\\Resources\\Ajuda.chm");
         }
     }
 }

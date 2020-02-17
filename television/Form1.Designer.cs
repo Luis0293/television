@@ -48,7 +48,7 @@
             this.button17 = new System.Windows.Forms.Button();
             this.button18 = new System.Windows.Forms.Button();
             this.button19 = new System.Windows.Forms.Button();
-            this.button30 = new System.Windows.Forms.Button();
+            this.Help = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.button29 = new System.Windows.Forms.Button();
@@ -295,17 +295,17 @@
             this.button19.UseVisualStyleBackColor = false;
             this.button19.Click += new System.EventHandler(this.Button19_Click);
             // 
-            // button30
+            // Help
             // 
-            this.button30.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button30.Location = new System.Drawing.Point(134, 415);
-            this.button30.Name = "button30";
-            this.button30.Size = new System.Drawing.Size(40, 40);
-            this.button30.TabIndex = 30;
-            this.button30.Tag = "ON";
-            this.button30.Text = "O";
-            this.button30.UseVisualStyleBackColor = true;
-            this.button30.Click += new System.EventHandler(this.Button30_Click);
+            this.Help.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Help.Location = new System.Drawing.Point(134, 415);
+            this.Help.Name = "Help";
+            this.Help.Size = new System.Drawing.Size(40, 40);
+            this.Help.TabIndex = 30;
+            this.Help.Tag = "ON";
+            this.Help.Text = "?";
+            this.Help.UseVisualStyleBackColor = true;
+            this.Help.Click += new System.EventHandler(this.Help_Click_1);
             // 
             // timer1
             // 
@@ -476,7 +476,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(902, 585);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button30);
+            this.Controls.Add(this.Help);
             this.Controls.Add(this.button29);
             this.Controls.Add(this.button28);
             this.Controls.Add(this.flowLayoutPanel1);
@@ -561,7 +561,7 @@
         private System.Windows.Forms.Button button19;
         private System.Windows.Forms.Button button28;
         private System.Windows.Forms.Button button29;
-        private System.Windows.Forms.Button button30;
+        private System.Windows.Forms.Button Help;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label label1;
     }
