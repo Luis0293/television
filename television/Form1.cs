@@ -55,7 +55,6 @@ namespace television
                 pictureBox12.Visible = TV.enviar2;
                 pictureBox3.Visible = TV.enviar2;
                 label1.Visible = TV.enviar;
-                
             }
         }
 
